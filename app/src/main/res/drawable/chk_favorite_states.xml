@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- si el checkBox está apagado que muestre este ícono border -->
+    <item
+        android:drawable="@drawable/ic_favorite_border"
+        android:state_checked="false"/>
+
+    <!-- si el checkBox está encendido que muestre este ícono complete -->
+    <item
+        android:drawable="@drawable/ic_favorite_complete"
+        android:state_checked="true"/>
+
+    <!-- el checkBox por defecto que muestre este ícono border -->
+    <item
+        android:drawable="@drawable/ic_favorite_border"/>
+
+</selector>

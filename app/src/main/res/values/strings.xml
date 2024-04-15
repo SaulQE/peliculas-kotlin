@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Peliculas</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_titulo">titulo de la pelicula</string>
+    <string name="helper_required">Requerido</string>
+    <string name="hint_anio">año de salida</string>
+    <string name="hint_genero">genero</string>
+    <string name="hint_duracion">duracion</string>
+    <string name="hint_puntuacion">puntuacion</string>
+    <string name="hint_idioma">idioma</string>
+    <string name="hint_trailer">url trailer</string>
+    <string name="hint_portada">url portada</string>
+
+    <string name="fragment_title">Nueva pelicula</string>
+    <string name="menu_save">Guardar</string>
+    <string name="message_save">¡Pelicula registrada!</string>
+    <string name="message_update">¡Pelicula actualizada!</string>
+    <string name="title_update">Editar Pelicula</string>
+    <string name="title_insert">Registrar Pelicula</string>
+    <string name="dialog_delete">¿Eliminar Pelicula?</string>
+    <string name="dialog_delete_confirm">Eliminar</string>
+    <string name="dialog_delete_cancel">Cancelar</string>
+    <string name="dialog_options">¿Que desea hacer?</string>
+
+</resources>

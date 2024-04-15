@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".PeliculaFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_default">
+
+        <!-- Titulo -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_titulo"
+            app:helperText="@string/helper_required"
+            app:counterMaxLength="@integer/max_name"
+            app:counterEnabled="true"
+            app:startIconDrawable="@drawable/ic_add_comercio"
+            app:endIconMode="clear_text"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tietTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterMaxLength="@integer/max_name"
+                android:inputType="textCapWords"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Año de salida -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilAnioSalida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_anio"
+            app:helperText="@string/helper_required"
+            app:counterMaxLength="@integer/max_name"
+            app:counterEnabled="true"
+            app:startIconDrawable="@drawable/ic_add_comercio"
+            app:endIconMode="clear_text"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tietAnioSalida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterMaxLength="@integer/max_name"
+                android:inputType="textCapWords"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Genero -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilGenero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_genero"
+            app:helperText="@string/helper_required"
+            app:counterMaxLength="@integer/max_name"
+            app:counterEnabled="true"
+            app:startIconDrawable="@drawable/ic_add_comercio"
+            app:endIconMode="clear_text"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tietGenero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterMaxLength="@integer/max_name"
+                android:inputType="textCapWords"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Duracion -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilDuracion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_duracion"
+            app:helperText="@string/helper_required"
+            app:counterMaxLength="@integer/max_name"
+            app:counterEnabled="true"
+            app:startIconDrawable="@drawable/ic_add_comercio"
+            app:endIconMode="clear_text"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tietDuracion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterMaxLength="@integer/max_name"
+                android:inputType="textCapWords"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Puntuacion -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilPuntuacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_puntuacion"
+            app:helperText="@string/helper_required"
+            app:counterMaxLength="@integer/max_name"
+            app:counterEnabled="true"
+            app:startIconDrawable="@drawable/ic_add_comercio"
+            app:endIconMode="clear_text"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tietPuntuacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterMaxLength="@integer/max_name"
+                android:inputType="textCapWords"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Idioma -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilIdioma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_idioma"
+            app:helperText="@string/helper_required"
+            app:counterMaxLength="@integer/max_name"
+            app:counterEnabled="true"
+            app:startIconDrawable="@drawable/ic_add_comercio"
+            app:endIconMode="clear_text"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tietIdioma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterMaxLength="@integer/max_name"
+                android:inputType="textCapWords"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Trailer -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilTrailer"
+            android:layout_marginTop="@dimen/padding_default"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_trailer"
+            app:startIconDrawable="@drawable/ic_website"
+            app:endIconMode="clear_text"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tietTrailer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="@integer/liner_url_website"
+                android:maxLines="@integer/liner_url_website"
+                android:textAppearance="?attr/textAppearanceCaption"
+                android:inputType="textMultiLine"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Portada -->
+        <LinearLayout
+            android:layout_marginTop="@dimen/padding_default"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilPortadaURL"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/hint_portada"
+                app:startIconDrawable="@drawable/ic_image_url"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietPortada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:textAppearance="?attr/textAppearanceCaption"
+                    android:minLines="@integer/liner_url_image"
+                    android:maxLines="@integer/liner_url_image"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/ivPortada"
+                android:layout_width="@dimen/image_size"
+                android:layout_height="@dimen/image_size"
+                android:src="@drawable/ic_image"
+                android:layout_marginStart="@dimen/padding_default"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

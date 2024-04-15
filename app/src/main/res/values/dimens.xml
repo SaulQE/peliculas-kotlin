@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_card_height">200dp</dimen>
+
+    <dimen name="padding_min">8dp</dimen>
+    <dimen name="padding_default">16dp</dimen>
+    <dimen name="padding_middle">24dp</dimen>
+    <dimen name="image_size">90dp</dimen>
+</resources>
