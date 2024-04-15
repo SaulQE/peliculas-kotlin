@@ -23,7 +23,7 @@
             app:helperText="@string/helper_required"
             app:counterMaxLength="@integer/max_name"
             app:counterEnabled="true"
-            app:startIconDrawable="@drawable/ic_add_comercio"
+            app:startIconDrawable="@drawable/ic_add_pelicula"
             app:endIconMode="clear_text"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
@@ -45,7 +45,7 @@
             app:helperText="@string/helper_required"
             app:counterMaxLength="@integer/max_name"
             app:counterEnabled="true"
-            app:startIconDrawable="@drawable/ic_add_comercio"
+            app:startIconDrawable="@drawable/ic_calender"
             app:endIconMode="clear_text"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
@@ -66,7 +66,7 @@
             app:helperText="@string/helper_required"
             app:counterMaxLength="@integer/max_name"
             app:counterEnabled="true"
-            app:startIconDrawable="@drawable/ic_add_comercio"
+            app:startIconDrawable="@drawable/ic_genero"
             app:endIconMode="clear_text"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
@@ -87,7 +87,7 @@
             app:helperText="@string/helper_required"
             app:counterMaxLength="@integer/max_name"
             app:counterEnabled="true"
-            app:startIconDrawable="@drawable/ic_add_comercio"
+            app:startIconDrawable="@drawable/ic_duracion"
             app:endIconMode="clear_text"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
@@ -108,7 +108,7 @@
             app:helperText="@string/helper_required"
             app:counterMaxLength="@integer/max_name"
             app:counterEnabled="true"
-            app:startIconDrawable="@drawable/ic_add_comercio"
+            app:startIconDrawable="@drawable/ic_puntuacion"
             app:endIconMode="clear_text"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
@@ -129,7 +129,7 @@
             app:helperText="@string/helper_required"
             app:counterMaxLength="@integer/max_name"
             app:counterEnabled="true"
-            app:startIconDrawable="@drawable/ic_add_comercio"
+            app:startIconDrawable="@drawable/ic_idioma"
             app:endIconMode="clear_text"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
@@ -148,7 +148,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/hint_trailer"
-            app:startIconDrawable="@drawable/ic_website"
+            app:startIconDrawable="@drawable/ic_pantalla"
             app:endIconMode="clear_text"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
