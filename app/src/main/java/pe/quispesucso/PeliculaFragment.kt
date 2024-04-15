@@ -77,7 +77,7 @@ class PeliculaFragment : Fragment()
         //poner acceso al menu_save
         setHasOptionsMenu(true)
 
-        //evento tietImagen (cargar imagen con GLIDE)
+        //evento tietPortada (cargar imagen con GLIDE)
         mBinding.tietPortada.addTextChangedListener {
             Glide.with(this).load(mBinding.tietPortada.text.toString())
                 .diskCacheStrategy(DiskCacheStrategy.ALL).centerCrop().into(mBinding.ivPortada)
@@ -181,7 +181,7 @@ class PeliculaFragment : Fragment()
         //disvincularse del recurso menu_save
         setHasOptionsMenu(false)
 
-        //mostrar el boton flotante fabComercio
+        //mostrar el boton flotante fabPelicula
         mActivity?.hideFabPelicula(true)
 
         super.onDestroy()
@@ -238,7 +238,7 @@ class PeliculaFragment : Fragment()
 
         if(mBinding.tietPortada.text.toString().trim().isEmpty())
         {
-            //narco color rojo
+            //marco color rojo
             mBinding.tilPortadaURL.error=getString(R.string.helper_required)
 
             //posicionamiento del curso
@@ -248,7 +248,6 @@ class PeliculaFragment : Fragment()
         }
         if(mBinding.tietTrailer.text.toString().trim().isEmpty())
         {
-            //narco color rojo
             mBinding.tilTrailer.error=getString(R.string.helper_required)
 
             //posicionamiento del curso
@@ -258,7 +257,6 @@ class PeliculaFragment : Fragment()
         }
         if(mBinding.tietTitulo.text.toString().trim().isEmpty())
         {
-            //narco color rojo
             mBinding.tilTitulo.error=getString(R.string.helper_required)
 
             //posicionamiento del curso

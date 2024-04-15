@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity(), OnClickListener, MainAuxiliary
         mBinding=ActivityMainBinding.inflate(layoutInflater)
         setContentView(mBinding.root)
 
-        //evento fabComercio (botón flotante)
+        //evento fabPelicula (botón flotante)
         mBinding.fabPelicula.setOnClickListener {
 
             //lanzar fragmento
@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity(), OnClickListener, MainAuxiliary
 
     override fun onClickDelete(peliculaEntity: PeliculaEntity)
     {
-        val items=arrayOf("Eliminar","Ir al sitio web")
+        val items=arrayOf("Eliminar","Ver traíler")
 
         MaterialAlertDialogBuilder(this)
             .setTitle(R.string.dialog_options)
@@ -94,7 +94,7 @@ class MainActivity : AppCompatActivity(), OnClickListener, MainAuxiliary
             layoutManager=mGridLayout //asignar mGridLayout
         }
 
-        //load comercios de la BD
+        //load peliculas de la BD
         doAsync {
             val peliculasDB=PeliculaApp.database.PeliculaDao().findAll()
 
