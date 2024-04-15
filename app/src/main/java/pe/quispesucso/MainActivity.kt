@@ -85,8 +85,9 @@ class MainActivity : AppCompatActivity(), OnClickListener, MainAuxiliary
         //empieza con lista vacía
         mAdapter=PeliculaAdapter(mutableListOf(),this)
 
-        //1 contenido por cada fila
-        mGridLayout= GridLayoutManager(this,1)
+        // Número de columnas en la cuadrícula
+        val numberOfColumns = 2
+        mGridLayout= GridLayoutManager(this,numberOfColumns)
 
         mBinding.recyclerView.apply {
             setHasFixedSize(true) //tamaño fijo
@@ -103,6 +104,7 @@ class MainActivity : AppCompatActivity(), OnClickListener, MainAuxiliary
             }
         }
     }
+
 
     override fun hideFabPelicula(isVisible: Boolean)
     {
