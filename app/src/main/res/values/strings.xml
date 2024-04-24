@@ -1,12 +1,12 @@
 <resources>
-    <string name="app_name">Peliculas</string>
+    <string name="app_name">PELÍCULAS</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hint_titulo">Título de la película</string>
     <string name="helper_required">Requerido</string>
     <string name="hint_anio">Año de salida</string>
     <string name="hint_genero">Género</string>
-    <string name="hint_duracion">Duración</string>
+    <string name="hint_duracion">Duración minutos</string>
     <string name="hint_puntuacion">Puntuación</string>
     <string name="hint_idioma">Idioma</string>
     <string name="hint_trailer">URL tráiler</string>
