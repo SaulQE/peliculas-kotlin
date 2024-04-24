@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/hint_anio"
             app:helperText="@string/helper_required"
-            app:counterMaxLength="@integer/max_name"
+            app:counterMaxLength="@integer/fecha"
             app:counterEnabled="true"
             app:startIconDrawable="@drawable/ic_calender"
             app:endIconMode="clear_text"
@@ -53,7 +53,7 @@
                 android:id="@+id/tietAnioSalida"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:counterMaxLength="@integer/max_name"
+                app:counterMaxLength="@integer/fecha"
                 android:inputType="textCapWords"/>
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -64,7 +64,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/hint_genero"
             app:helperText="@string/helper_required"
-            app:counterMaxLength="@integer/max_name"
+            app:counterMaxLength="@integer/min_name"
             app:counterEnabled="true"
             app:startIconDrawable="@drawable/ic_genero"
             app:endIconMode="clear_text"
@@ -74,7 +74,7 @@
                 android:id="@+id/tietGenero"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:counterMaxLength="@integer/max_name"
+                app:counterMaxLength="@integer/min_name"
                 android:inputType="textCapWords"/>
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -85,7 +85,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/hint_duracion"
             app:helperText="@string/helper_required"
-            app:counterMaxLength="@integer/max_name"
+            app:counterMaxLength="@integer/max_duracion"
             app:counterEnabled="true"
             app:startIconDrawable="@drawable/ic_duracion"
             app:endIconMode="clear_text"
@@ -95,7 +95,7 @@
                 android:id="@+id/tietDuracion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:counterMaxLength="@integer/max_name"
+                app:counterMaxLength="@integer/max_duracion"
                 android:inputType="textCapWords"/>
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -106,7 +106,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/hint_puntuacion"
             app:helperText="@string/helper_required"
-            app:counterMaxLength="@integer/max_name"
+            app:counterMaxLength="@integer/max_duracion"
             app:counterEnabled="true"
             app:startIconDrawable="@drawable/ic_puntuacion"
             app:endIconMode="clear_text"
@@ -116,7 +116,7 @@
                 android:id="@+id/tietPuntuacion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:counterMaxLength="@integer/max_name"
+                app:counterMaxLength="@integer/max_duracion"
                 android:inputType="textCapWords"/>
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -127,7 +127,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/hint_idioma"
             app:helperText="@string/helper_required"
-            app:counterMaxLength="@integer/max_name"
+            app:counterMaxLength="@integer/min_name"
             app:counterEnabled="true"
             app:startIconDrawable="@drawable/ic_idioma"
             app:endIconMode="clear_text"
@@ -137,7 +137,7 @@
                 android:id="@+id/tietIdioma"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:counterMaxLength="@integer/max_name"
+                app:counterMaxLength="@integer/min_name"
                 android:inputType="textCapWords"/>
         </com.google.android.material.textfield.TextInputLayout>
 
