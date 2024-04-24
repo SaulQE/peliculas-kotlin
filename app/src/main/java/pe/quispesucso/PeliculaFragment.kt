@@ -236,6 +236,81 @@ class PeliculaFragment : Fragment()
     {
         var isValid=true
 
+        if(mBinding.tietTitulo.text.toString().trim().isEmpty())
+        {
+            mBinding.tilTitulo.error=getString(R.string.helper_required)
+
+            //posicionamiento del curso
+            mBinding.tilTitulo.requestFocus()
+
+            isValid=false
+        }
+
+        if(mBinding.tietAnioSalida.text.toString().trim().isEmpty())
+        {
+            //marco color rojo
+            mBinding.tilAnioSalida.error=getString(R.string.helper_required)
+
+            //posicionamiento del curso
+            mBinding.tilAnioSalida.requestFocus()
+
+            isValid=false
+        }
+
+        if(mBinding.tietGenero.text.toString().trim().isEmpty())
+        {
+            //marco color rojo
+            mBinding.tilGenero.error=getString(R.string.helper_required)
+
+            //posicionamiento del curso
+            mBinding.tilGenero.requestFocus()
+
+            isValid=false
+        }
+
+        if(mBinding.tietDuracion.text.toString().trim().isEmpty())
+        {
+            //marco color rojo
+            mBinding.tilDuracion.error=getString(R.string.helper_required)
+
+            //posicionamiento del curso
+            mBinding.tilDuracion.requestFocus()
+
+            isValid=false
+        }
+
+        if(mBinding.tietPuntuacion.text.toString().trim().isEmpty())
+        {
+            //marco color rojo
+            mBinding.tilPuntuacion.error=getString(R.string.helper_required)
+
+            //posicionamiento del curso
+            mBinding.tilPuntuacion.requestFocus()
+
+            isValid=false
+        }
+
+        if(mBinding.tietIdioma.text.toString().trim().isEmpty())
+        {
+            //marco color rojo
+            mBinding.tilIdioma.error=getString(R.string.helper_required)
+
+            //posicionamiento del curso
+            mBinding.tilIdioma.requestFocus()
+
+            isValid=false
+        }
+
+        if(mBinding.tietTrailer.text.toString().trim().isEmpty())
+        {
+            mBinding.tilTrailer.error=getString(R.string.helper_required)
+
+            //posicionamiento del curso
+            mBinding.tietTrailer.requestFocus()
+
+            isValid=false
+        }
+
         if(mBinding.tietPortada.text.toString().trim().isEmpty())
         {
             //marco color rojo
@@ -246,24 +321,7 @@ class PeliculaFragment : Fragment()
 
             isValid=false
         }
-        if(mBinding.tietTrailer.text.toString().trim().isEmpty())
-        {
-            mBinding.tilTrailer.error=getString(R.string.helper_required)
 
-            //posicionamiento del curso
-            mBinding.tietTrailer.requestFocus()
-
-            isValid=false
-        }
-        if(mBinding.tietTitulo.text.toString().trim().isEmpty())
-        {
-            mBinding.tilTitulo.error=getString(R.string.helper_required)
-
-            //posicionamiento del curso
-            mBinding.tilTitulo.requestFocus()
-
-            isValid=false
-        }
 
         return isValid
     }
